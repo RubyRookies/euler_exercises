@@ -3,9 +3,10 @@
 
 require 'prime'
 
+# First figure out each factor of the number
 def primefactors(number)
   factors = []
-  i = 1
+  i = 2
 
   while i < number
     if number % i == 0 
@@ -14,17 +15,16 @@ def primefactors(number)
     i += 1
   end
 
-  a = factors.length
-  el = 0
-  primes = [1]
-  while el < a
-    if Prime.prime?(factors[el])
-      primes << factors[el]
+# Then iterate through the factors and determine which is prime.
+  primes = []
+  factors.each do |el|
+    if Prime.prime?(el)
+      primes << el
     end
-    el += 1
   end
 
   p primes
 end
 
-primefactors(200000000)
+primefactors(851475143)
+# 600851475143
