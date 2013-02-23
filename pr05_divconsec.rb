@@ -1,12 +1,13 @@
 # 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-def smallestmultiple
+def smallestmultiple(counter)
+
   number, i = 1, 1
   factors = []
-  j = 2
+  j = 1
 
-  while i <= 10
+  while i <= counter
     number *= i
     i += 1
   end
@@ -18,7 +19,7 @@ def smallestmultiple
     j += 1
   end
 
-  p factors 
+  p factors
 end 
 
-smallestmultiple
+smallestmultiple(10)
