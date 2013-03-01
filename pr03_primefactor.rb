@@ -20,7 +20,7 @@ def primefactors(number)
 =end
 
 # Then iterate through the factors and determine which is prime.
-  primes = Prime.first(number/100)
+  primes = Prime.first(number)
   largest = []
 
 =begin
@@ -34,5 +34,5 @@ def primefactors(number)
   p primes
 end
 
-primefactors(60085147)
+primefactors(10)
 # 600851475143
