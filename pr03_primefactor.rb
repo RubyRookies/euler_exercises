@@ -7,7 +7,6 @@ require 'benchmark'
 # First figure out each factor of the number
 def primefactors(number)
 
-=begin
   factors = []
   i = 2
 
@@ -17,19 +16,19 @@ def primefactors(number)
     end
     i += 1
   end
-=end
+
 
 # Then iterate through the factors and determine which is prime.
   primes = Prime.first(number)
   largest = []
 
-=begin
+
   factors.each do |el|
     if primes.include?(el)
       largest << el
     end
   end
-=end
+
 
   p primes
 end

@@ -4,6 +4,7 @@
 require 'prime'
 
 def smallestmultiple(count)
+
   testcounts = []
   i, j, k = 1, 0, 1
   multiple = 1
@@ -27,8 +28,8 @@ def smallestmultiple(count)
 
 
   p multiple
-  p factors
-
-end 
+  p factors  
+  
+end
 
 smallestmultiple(10)
