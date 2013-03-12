@@ -1,0 +1,27 @@
+Rubyist notes for project Euler: * are items from meetup
+(put this out on ruby list)
+
+Some basics - 
+1. How to look up types
+2. How to look up methods on types
+3. How to structure methods
+4. How to structure recursive
+5. Resources for on-going practice
+
+Problem 1 - Multiples of 3 and 5
+1. using each Proc to do repetition
+2. using modulo %
+3. working with arrays 
+4. .to_s and .length
+* 
+
+Problem 2 - Even Fibonacci numbers
+1. multiple assignments: curr, succ = a, a+b
+2. note about recursive vs. direct
+* 
+
+Problem 4 - Largest palindrome product
+1. nested arrays 
+2. .reverse method
+3. if statement to test equality
+* 

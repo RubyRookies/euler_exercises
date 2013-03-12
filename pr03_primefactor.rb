@@ -8,7 +8,8 @@ require 'benchmark'
 def primefactors(number)
 
   factors = []
-  i = 2
+  primefactors = []
+  i, j = 2, 0
 
   while i < number
     if number % i == 0 
@@ -17,21 +18,16 @@ def primefactors(number)
     i += 1
   end
 
-
-# Then iterate through the factors and determine which is prime.
-  primes = Prime.first(number)
-  largest = []
-
-
-  factors.each do |el|
-    if primes.include?(el)
-      largest << el
+  while j < factors.length
+    if factors[j].prime?
+      primefactors << factors[j]
     end
+    j += 1
   end
 
-
-  p primes
+  p factors
+  p primefactors
 end
 
-primefactors(10)
+primefactors(13475143)
 # 600851475143
