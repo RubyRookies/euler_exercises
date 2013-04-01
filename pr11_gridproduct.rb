@@ -1,17 +1,13 @@
-data = File.new('pr11_source')
-raw_array = []
-sum, counter = 0, 0
+# def gridproduct
+# end
 
-while (line = data.gets) 
-  # raw_array << line.split(' ')
-  raw_array << "#{line}".split
+def test_box
+  array = [[1,2,3,4],
+          [5,6,7,8], 
+          [9,10,11,12], 
+          [13,14,15,16]]
+  
+  p array[0..1][0..1]
 end
 
-raw_array.flatten!
-
-while counter < raw_array.length
-  raw_array[counter] = raw_array[counter].to_i
-  counter += 1
-end
-
-p raw_array
+test_box
