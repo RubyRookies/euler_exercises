@@ -1,5 +1,5 @@
-# count the cumulative count of letters in sums.  one, two, three, four, five, 
-# then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total. 
+# count the cumulative count of letters in sums.  one, two, three, four, five,
+# then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
 
 def countletters(number)
 
@@ -11,21 +11,16 @@ def countletters(number)
     11 => "eleven", 12 => "twelve", 13 => "thirteen", 14 => "fourteen",
     15 => "fifteen", 16 => "sixteen", 17 => "seventeen", 18 => "eighteen",
     19 => "nineteen", 20 => "twenty", 30 => "thirty", 40 => "fourty", 50 => "fifty",
-    60 => "sixty", 70 => "seventy", 80 => "eighty", 90 => "ninety", 100 => "onehundred",
+    60 => "sixty", 70 => "seventy", 80 => "eighty", 90 => "ninety", 100 => "hundred",
     1000 => "thousand", 1000000 => "million", 1000000000 => "billion"
   }
 
   if numerical.length == 2
     if numerical[0]
-    p "#{dictionary[20]}#{dictionary[number-20]}"
+      p "#{dictionary[20]}#{dictionary[number-20]}"
+    end
   end
 
-  #lettercount = 0
-  #(1 .. number).each do |el|
-    # lettercount += dictionary[el].length # needs to be array of answers
-  #end
-
-  
 end
 
-countletters(31)
+countletters(42)
